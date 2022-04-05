@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from logging import raiseExceptions
 
-acceptableMoves = "RLFBUDrlfbudm'23"
+acceptableMoves = "RLFBUDrlfbudmxyz'23"
 
 def mirror(input):
     match input:
@@ -21,7 +21,7 @@ def mirror(input):
 
         # any other input is error
         case _:
-            raise Exception("Sorry, that's not a valid character")
+            raise Exception(f"Sorry, the charcter '{input}' is not a valid character")
 
 def clean(string, chars):
     # removes all spaces
