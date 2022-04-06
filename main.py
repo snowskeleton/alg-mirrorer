@@ -3,5 +3,6 @@
 import sys
 from funcs import invert
 
-answer = invert(sys.argv[1])
-print(answer, file = sys.stdout)
+for line in sys.stdin:
+	answer = invert(line)
+	print(answer, file = sys.stdout)
