@@ -42,10 +42,22 @@ Mir is a simple python program reverse the symmetry of a rubik's cube algorithm 
 
 * You can even go the other way
 
-* * ```$ cat input.txt```
-
-* * ```>> R' U' F U R U' R' F' R```
-
-* * ```$ cat input.txt | mir```
+* * ```$ echo "R' U' F U R U' R' F' R`" | mir```
 
 * * ```>> L U F' U' L' U L F L'```
+
+* Mir can operating on files containing a list of algorithms, treating each newline as the start of an algoritm.
+
+* * ```$ cat input.txt```
+* * ```>> R' U' F U R U' R' F' R```
+* * ```>> l' U' l L' U' L U l' U l```
+* * ```>> R' F R U R U' R2 F' R2 U' R' U R U R'```
+* * ```>> F U R U' R' U R U' R' F'```
+* * ```>> r U R' U' M2 U R U' R' U' M'```
+##
+* * ```$ cat input.txt | mir```
+* * ```>> L U F' U' L' U L F L'```
+* * ```>> r U r' R U R' U' r U' r'```
+* * ```>> L F' L' U' L' U L2 F L2 U L U' L' U' L```
+* * ```>> F' U' L' U L U' L' U L F```
+* * ```>> l' U' L U M2 U' L' U L U M```
