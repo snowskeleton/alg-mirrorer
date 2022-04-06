@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from logging import raiseExceptions
 
-acceptableMoves = "RLFBUDrlfbudmxyz'23"
+acceptableMoves = "RLFBUDMrlfbudmxyz'23"
 
 def mirror(input):
     match input:
@@ -16,7 +16,7 @@ def mirror(input):
             return "r"
 
         # F, B, U, D, x, y, and z don't swap faces, just change direction, so these moves can be returned as is
-        case "F"|"B"|"U"|"D"|"f"|"b"|"u"|"d"|"x"|"y"|"z"|"m":
+        case "F"|"B"|"U"|"D"|"M"|"f"|"b"|"u"|"d"|"x"|"y"|"z"|"m":
             return input
 
         # any other input is error

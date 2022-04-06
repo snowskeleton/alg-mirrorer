@@ -6,6 +6,8 @@ assert invert("F'RU2R'U2R'F2RURU'R'F'") == "F L' U2 L U2 L F2 L' U' L' U L F", "
 
 assert invert("F 'RU 2R'U 2 R'F 2R UR U'R'F'") == "F L' U2 L U2 L F2 L' U' L' U L F", "mixed spacing"
 
+assert invert("r U R' U' M2 U R U' R' U' M'") == "l' U' L U M2 U' L U L U M", "more letters (like M)"
+
 assert invert("()  ") == "", "input sanitization"
 
 assert invert("F'") == "F", "single-length prime alg"
