@@ -1,9 +1,10 @@
-**Absstract**
+# Absstract
 
 Mir is a simple python program reverse the symmetry of a rubik's cube algorithm (e.g., right-handed to left-handed).
 
+# Install
 
-**Install** (macOS)
+## macOS
 
 * Download package
 
@@ -17,7 +18,10 @@ Mir is a simple python program reverse the symmetry of a rubik's cube algorithm 
 
 * * ```./install.sh```
 
-* Aftet it's installed, run it from the terminal like so: ```mir "<ALGORITHM>"```. (Note that the algoritm is double-quoted, not single-quoted.)
+* Aftet it's installed, run it from the terminal like so: ```mir "<ALGORITHM>"```. (Note that the algoritm is double-quoted, not single-quoted.)p
+
+## Other operating systems:
+* Simply clone this repo and run the ```main.py``` script directly from your command line, and pass in arguments as noted elsewhere.
 
 **Examples**
 
@@ -40,7 +44,7 @@ Mir is a simple python program reverse the symmetry of a rubik's cube algorithm 
 
 * * ```$ cat input.txt```
 
-* * ```>> "R' U' F U R U' R' F' R"```
+* * ```>> R' U' F U R U' R' F' R```
 
 * * ```$ cat input.txt | mir```
 
